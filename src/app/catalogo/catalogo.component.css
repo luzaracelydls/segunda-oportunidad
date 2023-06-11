@@ -2,7 +2,11 @@
     padding: 20px;
     background-color:#F8F4E8;
   }
-  
+  .button1 {
+    --background:#e95d26;
+    --color: white;
+    width: 60px;
+  }
   .catalogo-tit {
     padding: 20px;
     background-color:#e8c86a;

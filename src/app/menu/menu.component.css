@@ -11,3 +11,8 @@
   .menu-content {
     max-height: calc(25vh - 56px); 
   }
+  .button1 {
+    --background:#e95d26;
+    --color: white;
+    width: 60px;
+  }

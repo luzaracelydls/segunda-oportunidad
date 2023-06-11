@@ -5,30 +5,41 @@ ion-content {
     padding: 20px;
     background-color:#e8c86a;
   }
+
   .container {
+    background-image: url('https://static.vecteezy.com/system/resources/previews/013/828/018/non_2x/abstract-seamless-pattern-seamless-wallpaper-seamless-background-design-for-interior-wallpaper-fabric-curtain-carpet-clothing-batik-satin-background-illustration-embroidery-style-vector.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh; /* Ajusta la altura según tus necesidades */
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
-    height: 100%;
+    align-items: center;
+    text-align: center;
+    color: white; /* Ajusta el color del texto según tus necesidades */
     padding: 20px;
   }
-  
   .title1 {
-    font-size: 20px;
-    color: #8C5738;
-    margin-bottom: 20px;
+    font-size: 50px;
+    color: #2306ff;
+    margin-bottom: 40px;
   }
   
   .text {
-    font-size: 18px;
-    color: #6D6D6D;
+    font-size: 35px;
+    color: #00ff88;
     text-align: center;
     margin-bottom: 40px;
   }
   
   .button {
-    --background:#ca6128;
+    --background:#0bb9b3;
     --color: white;
     width: 200px;
+  }
+  .button1 {
+    --background:#e95d26;
+    --color: white;
+    width: 60px;
   }
