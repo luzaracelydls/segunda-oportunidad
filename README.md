@@ -1,4 +1,10 @@
-# MiNuevaApp
+# MiNuevaApp-1849179-Josue-Carrizales-Nuñez
+Sextas de Aplicaciones moviles
+Tienda en linea con productos de una api (fakestoreapi)
+Se utilizo como base de edicion la ipad mini para su visualizacion 
+Le agradezco su atencion y espero que se encuentre bien
+lo unico que falto fue el rango de estrellas osea la calificacion de los productos
+
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.0.0.
 

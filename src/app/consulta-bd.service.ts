@@ -10,26 +10,18 @@ export class ConsultaBDService {
     private http: HttpClient
     ) { }
     
-    
-    getProductos(){ //obtener todos los productos
+    getProductos(){ 
       return this.http.get('https://fakestoreapi.com/products')
     }
-    
-    getCategorias(){ //obtener todas las categorias
-      //https://fakestoreapi.com/products/categories
+    getCategorias(){ 
       return this.http.get('https://fakestoreapi.com/products/categories')
     }
-    
-    getProducto(id: number) { //Obtener un producto en particular
-      //https://fakestoreapi.com/products/1
+    getProducto(id: number) { 
       return this.http.get('https://fakestoreapi.com/products/' + id.toString())
     }
-    
-    getProductoPorCategoria(categoria: string){ //obtener lista de productos por categoria
-      //https://fakestoreapi.com/products/category/jewelry
+    getProductoPorCategoria(categoria: string){ 
       return this.http.get('https://fakestoreapi.com/products/category/'+ categoria)
     }
-    
     deleteProducto(id: number){
       return this.http.delete('https://fakestoreapi.com/products/' + id.toString());
     }

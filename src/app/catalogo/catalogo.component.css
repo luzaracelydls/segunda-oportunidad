@@ -1,0 +1,31 @@
+.catalogo-container {
+    padding: 20px;
+    background-color:#F8F4E8;
+  }
+  
+  .catalogo-tit {
+    padding: 20px;
+    background-color:#e8c86a;
+  }
+.catalogo-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #141c58; 
+    margin-bottom: 10px;
+  }
+.catalogo-text {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+  }
+.exp-ima {
+  margin-left: 20px;  
+  max-height: 60px;
+    max-width: 60px;
+    object-fit: cover; 
+  }
+  
+ion-card-content {
+    margin-top: 10px; 
+    white-space: normal; 
+  }

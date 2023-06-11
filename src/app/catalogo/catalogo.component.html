@@ -1,0 +1,38 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title class="catalogo-tit">Catalogo en linea</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="catalogo-container">
+    <h1 class="catalogo-title">Catalogo de productos</h1>
+    <ion-select [value]="categoriaSeleccionada" (ionChange)="filtrarPorCategoria($event)">
+      <ion-select-option value="">Departamentos</ion-select-option>
+      <ion-select-option *ngFor="let categoria of categorias" [value]="categoria">{{ categoria }}</ion-select-option>
+    </ion-select>
+    <ion-list>
+      <ion-item *ngFor="let producto of productos">
+        <ion-label (click)="expandirProducto(producto)">
+          <h2>{{ producto.title }}</h2>
+          <div [hidden]="!producto.expandido">
+            <ion-card>
+              <ion-img [src]="producto.image" alt="Imagen del producto" class="exp-ima"></ion-img>
+              <ion-card-header>
+                <ion-card-title>{{ producto.title }}</ion-card-title>
+                <ion-card-subtitle>{{ producto.category }}</ion-card-subtitle>
+              </ion-card-header>
+              <ion-card-content>
+                <p>{{ producto.description }}</p>
+                <p>Precio: {{ producto.price }}</p>
+              </ion-card-content>
+            </ion-card>
+          </div>
+        </ion-label>
+      </ion-item>
+    </ion-list>
+  </div>
+</ion-content>

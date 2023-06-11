@@ -6,5 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'miNuevaApp';
+  public pages = [
+    { title: 'Bienvenida', url: '/bienvenida', icon: 'home' },
+    { title: 'Catálogo', url: '/catalogo', icon: 'list' },
+  ];
 }

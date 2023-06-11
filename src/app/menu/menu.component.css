@@ -1,0 +1,13 @@
+.menu-header {
+    padding: 16px;
+    background-color: #f8f8f8;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .menu-header h2 {
+    font-size: 18px;
+    margin: 0;
+  }
+  .menu-content {
+    max-height: calc(25vh - 56px); 
+  }
